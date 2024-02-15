@@ -1,0 +1,7 @@
+<form action="" [formGroup]="regform">
+username:
+<input type="text" placeholder="username" class="form-control" formControlName="userName">
+<div>
+<small class="text-danger" *ngIf ="user.touched && user.errors?.['duplicate']">Username already exists</small>
+</div>
+</form>
